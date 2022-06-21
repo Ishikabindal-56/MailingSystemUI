@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JocataMail</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        overflow: hidden; /* Hide scrollbars */
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: white;
+        text-decoration: none;
+      }
+      nav {
+        box-shadow: 0px 2px 10px 0px #888888;
+      }
+      #home {
+        height: 650px;
+        width: 970px;
+      }
+      #submain1 {
+        width: 25%;
+        margin-left: 5%;
+      }
+      #homeHeading {
+        font-size: 49px;
+        letter-spacing: 1px;
+      }
+      #homeDesc {
+        color: #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light justify-content-around pt-3 pb-3">
+      <a class="navbar-brand" href="#">
+        <img
+          src="data:image/jpeg;base64,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"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        JocataMail
+      </a>
+      <div>
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">
+          <a href="LoginForm.html"> Sign In </a>
+        </button>
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">
+          <a href="registerForm.html"> Register </a>
+        </button>
+      </div>
+    </nav>
+    <div
+      id="main"
+      class="d-flex justify-content-around align-items-center mt-2"
+    >
+      <div id="submain1">
+        <h1 id="homeHeading">Secure, smart and easy to use email</h1>
+        <br />
+        <p id="homeDesc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta velit
+          non, quia, accusantium, ipsum necessitatibus.
+        </p>
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">
+          Register
+        </button>
+      </div>
+      <div id="submain2">
+        <img
+          id="home"
+          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+        />
+      </div>
+    </div>
+  </body>
+</html>
